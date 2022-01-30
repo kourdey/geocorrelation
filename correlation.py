@@ -22,8 +22,9 @@ class Phi:
             #Phi.values.insert(1,math.asin(0.8 - 0.094 * math.log(PI)))
         print (Phi.values)
 
+selectparameter = st.sidebar.selectbox('Select', ['Phi','E'])
 
-if st.sidebar.selectbox('Select', ['Phi','c','E'],key =1) == 'Phi':
+if selectparameter == 'Phi':
     option1 = 0
     option2  = 0
     N60 = 999
@@ -50,21 +51,7 @@ if st.sidebar.selectbox('Select', ['Phi','c','E'],key =1) == 'Phi':
         plt.scatter(names1, values1)
         #plt.show()
         st.pyplot(plt)
-elif st.sidebar.selectbox('Select', ['Phi','c','E'], key = 2) == 'E':
-    print("2")
+elif selectparameter == 'E':
+    st.write("***")
     
-
-
-
-
-
-
-        
-        
-        
-
-
-
-
-
 
